@@ -1,4 +1,6 @@
-# Docker Registry Client
+# Docker Registry Client (flatten dependencies)
+
+> This is a flatten dependencies repo of [docker-registry-client](https://github.com/heroku/docker-registry-client), due to Go's impossible dependency management (as of version 1.6). I faced similar issue [as explained here](https://github.com/mattfarina/golang-broken-vendor) and decided to create it.
 
 An API client for the [V2 Docker Registry
 API](http://docs.docker.com/registry/spec/api/), for Go applications.
@@ -7,10 +9,10 @@ API](http://docs.docker.com/registry/spec/api/), for Go applications.
 
 ```go
 import (
-    "github.com/heroku/docker-registry-client/registry"
-    "github.com/docker/distribution/digest"
-    "github.com/docker/distribution/manifest"
-    "github.com/docker/libtrust"
+    "github.com/eladg/docker-registry-client/registry"
+    "github.com/eladg/distribution/digest"
+    "github.com/eladg/distribution/manifest"
+    "github.com/eladg/libtrust"
 )
 ```
 

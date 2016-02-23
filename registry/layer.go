@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/docker/distribution/digest"
+	"github.com/eladg/docker-registry-client/imports/docker/distribution/digest"
 )
 
 func (registry *Registry) DownloadLayer(repository string, digest digest.Digest) (io.ReadCloser, error) {
